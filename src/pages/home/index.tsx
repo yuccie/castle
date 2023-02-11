@@ -6,7 +6,7 @@ import './index.less'
 export default function() {
   return (
     <View className='home'>
-      <Text>你好，威廉的古堡!</Text>
+      <Text>欢迎来到威廉的古堡!</Text>
     </View>
   )
 }
