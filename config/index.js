@@ -10,8 +10,10 @@ const config = {
   sourceRoot: 'src',
   outputRoot: 'dist',
   plugins: [],
+  // 全局变量设置
   defineConstants: {
   },
+  // 文件copy配置
   copy: {
     patterns: [
     ],
@@ -23,6 +25,7 @@ const config = {
   cache: {
     enable: false // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
   },
+  // 小程序端专用配置
   mini: {
     postcss: {
       pxtransform: {
@@ -31,6 +34,7 @@ const config = {
 
         }
       },
+      // 小程序端样式引用本地资源内联配置
       url: {
         enable: true,
         config: {
@@ -46,6 +50,7 @@ const config = {
       }
     }
   },
+  // H5 端专用配置
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
@@ -64,6 +69,7 @@ const config = {
       }
     }
   },
+  // rn 端专用配置
   rn: {
     appName: 'taroDemo',
     postcss: {

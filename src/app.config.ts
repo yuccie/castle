@@ -1,17 +1,17 @@
 export default defineAppConfig({
   pages: [
     'pages/index/index',
-    'pages/castle/index',
-    'pages/mine/index',
+    'pages/home/index',           // 首页
+    'pages/castle/index',         // 古堡页
+    'pages/mine/index',           // 我的
   ],
-  window: {
-    backgroundTextStyle: 'light',
-    navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: 'WeChat',
-    navigationBarTextStyle: 'black'
-  },
   tabBar: {
-    list: [
+    "custom": false,
+    "color": "#7A7E83",
+    // "selectedColor": "#000000",
+    // "backgroundColor": "#000000",
+    // 擦：tabbar的列表里必须包含index/index，或者不显示
+    "list": [
       {
         pagePath: 'pages/index/index',
         "iconPath": "image/icon_component.png",
@@ -31,5 +31,11 @@ export default defineAppConfig({
         text: '我的'
       },
     ]
-  }
+  },
+  window: {
+    backgroundTextStyle: 'light',
+    navigationBarBackgroundColor: '#fff',
+    navigationBarTitleText: 'WeChat',
+    navigationBarTextStyle: 'black'
+  },
 })
